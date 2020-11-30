@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">VideotoPhoto</string>
+
+    <string name="select_video">Select Video</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Slideshow">SlideShow maker</string>
+    <string name="Setting">Setting</string>
+    <string name="Share">Share</string>
+    <string name="Rate">Rate us</string>
+    <string name="About">About us</string>
+    <string name="FileFormat">File Format</string>
+    <string name="Quality">Quality</string>
+    <string name="Size">Size</string>
+    <string name="Best">Best</string>
+    <string name="VeryHigh">Very High</string>
+    <string name="High">High</string>
+    <string name="Medium">Medium</string>
+    <string name="Low">Low</string>
+    <string name="Edit">Edit</string>
+    <string name="Cancel">Cancel</string>
+    <string name="EnterDuration">Enter duration</string>
+    <string name="Ok">Ok</string>
+    <string name="EnterTime">Enter Time</string>
+    <string name="Error">Error</string>
+    <string name="SnapError">Please input time snap less than duration of video!</string>
+    <string name="SnapEvery">Snap every</string>
+    <string name="Sec">Second</string>
+    <string name="NullTimeSnap">You cant set null time snap!</string>
+    <string name="Resolution">Resolution</string>
+    <string name="Videos">Videos</string>
+    <string name="Images">Images</string>
+    <string name="Delete">Delete</string>
+    <string name="DeleteQuestion">Are you sure to delete this image?</string>
+    <string name="Crop">Crop</string>
+    <string name="Brush">Brush</string>
+    <string name="Opacity">Opacity</string>
+    <string name="FileName">File Name</string>
+    <string name="FileSize">File Size</string>
+    <string name="Path">Path</string>
+    <string name="Details">Details</string>
+    <string name="Done">Done</string>
+    <string name="Exit">Exit</string>
+    <string name="ExitQuestion">Do you want to Exit? Save before Exit,please</string>
+    <string name="QuickCapture">QuickCapture</string>
+    <string name="TimeCapture">Time Capture</string>
+    <string name="Rules">Rules</string>
+    <string name="Author">Author</string>
+    <string name="SelectImage">Selected n Image</string>
+    <string name="VideoName">Video Name</string>
+    <string name="Snapevery2sec">Snap every 2 sec</string>
+
+
+</resources>

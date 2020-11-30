@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    tools:context=".SettingDiaglog">
+
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/abc"
+        android:text="1x"
+        android:textColor="#1491F4"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuality" />
+
+    <TextView
+        android:id="@+id/txtQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/abc"
+        android:text="@string/High"
+        android:textColor="#1491F4"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFileFormat" />
+
+    <TextView
+        android:id="@+id/txtFileFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/abc"
+        android:text="JPG"
+        android:textColor="#1491F4"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/fileFormat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fileFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/FileFormat"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Quality"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/fileFormat"
+        app:layout_constraintTop_toBottomOf="@+id/fileFormat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Size"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/quality"
+        app:layout_constraintTop_toBottomOf="@+id/quality" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

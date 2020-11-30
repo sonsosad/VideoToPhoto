@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SizeDiaglog">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Size"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/ic_baseline_cancel_24"
+        app:layout_constraintStart_toEndOf="@+id/txtTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTitle"
+        app:layout_constraintRight_toRightOf="@+id/btnClose"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTitle"
+        app:layout_constraintRight_toRightOf="@+id/btnClose"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle">
+
+        <RadioButton
+            android:id="@+id/rd05x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.5x"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rd1x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1x"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rd15x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.5x"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rd2x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2x"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rd3x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3x"
+            android:textSize="24dp" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

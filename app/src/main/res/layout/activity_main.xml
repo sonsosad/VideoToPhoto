@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#0F171E"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imgvideo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSelect"
+        android:fontFamily="@font/abc"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/clouds"
+        android:text="@string/select_video"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgvideo"
+        app:shadowEnabled="true" />
+
+    <ImageView
+        android:id="@+id/imggallery"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvideo" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnGallery"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/abc"
+        android:layout_marginBottom="16dp"
+        android:background="@color/clouds"
+        android:text="@string/Gallery"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imggallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imggallery"
+        app:shadowEnabled="true" />
+
+    <ImageView
+        android:id="@+id/imgSlideshow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/slideshow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imggallery" />
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/abc"
+        android:layout_margin="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/clouds"
+        android:text="@string/Slideshow"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSlideshow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgSlideshow"
+        app:shadowEnabled="true" />
+
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/setting8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlideshow" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSetting"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="76dp"
+        android:fontFamily="@font/abc"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/clouds"
+        android:text="@string/Setting"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgSetting"
+        app:shadowEnabled="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/share" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Share"
+                    android:fontFamily="@font/abc"
+                    android:textSize="30sp"></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cvRate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/rate" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Rate"
+                    android:fontFamily="@font/abc"
+                    android:textSize="30sp"></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAbout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/about" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/abc"
+                    android:text="@string/About"
+                    android:textSize="30sp"></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.son.videotophoto">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SaveSucces"></activity>
+        <activity android:name=".EmojiDialog" />
+        <activity android:name=".TextEditorDialog" />
+        <activity
+            android:name=".EditPhoto"
+            android:noHistory="true" />
+        <activity android:name=".Fragment.ImagesFragment" />
+        <activity android:name=".Fragment.VideosFragment" />
+        <activity android:name=".Gallery" />
+        <activity android:name=".SetTimeDialog" />
+        <activity android:name=".Fragment.TimeCapture" />
+        <activity android:name=".Fragment.QuickCapture" />
+        <activity android:name=".Capture" />
+        <activity android:name=".SizeDiaglog" />
+        <activity android:name=".QualityDialog" />
+        <activity android:name=".FileFormatDialog" />
+        <activity android:name=".SettingDiaglog" />
+        <activity android:name=".ListVideo" />
+        <activity android:name=".ReadFolder" />
+        <activity android:name=".WebViewSetup" />
+        <activity android:name=".DialogAbout" />
+        <activity android:name=".Setting" />
+        <activity android:name=".VideoToPhoto" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.son.videotophoto.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
